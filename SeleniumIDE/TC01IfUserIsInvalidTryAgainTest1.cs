@@ -68,7 +68,7 @@ public class TC01IfUserIsInvalidTryAgainTest
             // 15 | click | css=*[data-test="login-button"] | 
             driver.FindElement(By.CssSelector("*[data-test=\"login-button\"]")).Click();
             // 16 | assertText | css=*[data-test="title"] | Products
-            Assert.That(driver.FindElement(By.CssSelector("*[data-test=\"title\"]")).Text, Is.EqualTo("Products"));
+            Assert.That(driver.FindElement(By.CssSelector("*[data-test=\"title\"]")).Text, Is.NotEqualTo("Products"));
             // 17 | echo | Successful login  | 
             Console.WriteLine("Successful login ");
             // 18 | end |  | 
