@@ -5,7 +5,7 @@ pipeline{
     stages{
         stage("Restore dependencies"){
             steps{
-                bat "dotnet restore"
+                bat 'dotnet restore'
             }
             
             stage("Build project"){
